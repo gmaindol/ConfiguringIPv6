@@ -1,4 +1,6 @@
-<neighbor-discovery>
+      <layer3>
+        <ipv6>
+          <neighbor-discovery>
             <router-advertisement>
               <enable>no</enable>
             </router-advertisement>
@@ -15,3 +17,11 @@
               <enable-on-interface>yes</enable-on-interface>
             </entry>
           </address>
+        </ipv6>
+        <ndp-proxy>
+          <enabled>no</enabled>
+        </ndp-proxy>
+        <lldp>
+          <enable>no</enable>
+        </lldp>
+      </layer3>
