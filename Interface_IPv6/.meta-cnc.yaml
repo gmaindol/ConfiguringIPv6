@@ -1,0 +1,55 @@
+# skillet preamble information used by panhandler
+# ---------------------------------------------------------------------
+# unique snippet name
+name: Interface_IPv6
+# label used for menu selection
+label: Interface_IPv6
+description: Configuring IPv6 on VMseries Interface
+
+# type of device configuration
+# common types are panorama, panos, and template
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+type: panos
+# preload static or default-based templates
+extends:
+
+# grouping of like snippets for dynamic menu creation in panhandler
+labels:
+  collection:
+    - IPv6
+
+# ---------------------------------------------------------------------
+# end of preamble section
+
+# variables section
+# ---------------------------------------------------------------------
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints can be text, ip_address, or dropdown
+variables:
+  - name: ipv6_address
+    description: enter ipv6 address
+    default: ipv6_address
+    type_hint: ipv6
+  # - name: choices
+  #   description: sample dropdown list
+  #   default: choices
+  #   type_hint: dropdown
+  #   dd_list:
+  #     - key: option1
+  #       value: option1
+  #     - key: option2
+  #       value: option2
+# ---------------------------------------------------------------------
+# end of variables section
+
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+  - name: quick_name
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface/ethernet/entry[@name='ethernet1/1']
+    file: ipv6.xml
+# ---------------------------------------------------------------------
+# end of snippets section

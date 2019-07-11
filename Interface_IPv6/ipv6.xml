@@ -1,0 +1,10 @@
+<entry name="{{ ipv6_address }}">
+              <advertise>
+                <enable>no</enable>
+                <valid-lifetime>2592000</valid-lifetime>
+                <preferred-lifetime>604800</preferred-lifetime>
+                <onlink-flag>yes</onlink-flag>
+                <auto-config-flag>yes</auto-config-flag>
+              </advertise>
+              <enable-on-interface>yes</enable-on-interface>
+            </entry>
