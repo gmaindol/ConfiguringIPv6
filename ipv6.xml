@@ -1,4 +1,10 @@
-<entry name="{{ ipv6_address }}">
+<neighbor-discovery>
+            <router-advertisement>
+              <enable>no</enable>
+            </router-advertisement>
+          </neighbor-discovery>
+          <address>
+            <entry name="{{ insert_your_IPv6_address }}">
               <advertise>
                 <enable>no</enable>
                 <valid-lifetime>2592000</valid-lifetime>
@@ -8,3 +14,4 @@
               </advertise>
               <enable-on-interface>yes</enable-on-interface>
             </entry>
+          </address>

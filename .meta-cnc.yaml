@@ -48,7 +48,7 @@ variables:
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 snippets:
-  - name: quick_name
+  - name: IPv6
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface/ethernet/entry[@name='ethernet1/1']
     file: ipv6.xml
 # ---------------------------------------------------------------------
