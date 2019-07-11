@@ -27,7 +27,7 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
 variables:
-  - name: ipv6_address
+  - name: insert_your_IPv6_address
     description: enter ipv6 address
     default: ipv6_address
     type_hint: ipv6
