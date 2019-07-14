@@ -3,7 +3,7 @@
           <bgp>
             <enable>no</enable>
             <dampening-profile>
-              <entry name="default">
+              <entry name="{{ vrouter_name }}">
                 <cutoff>1.25</cutoff>
                 <reuse>0.5</reuse>
                 <max-hold-time>900</max-hold-time>
