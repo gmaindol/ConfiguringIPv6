@@ -7,7 +7,7 @@
             <enable-ndp-monitor>yes</enable-ndp-monitor>
           </neighbor-discovery>
           <address>
-            <entry name="2001:db8:3c4d:15::/64">
+            <entry name="{{ 2001:db8:3c4d:15::/64 }}">
               <advertise>
                 <enable>no</enable>
                 <valid-lifetime>2592000</valid-lifetime>
@@ -27,5 +27,4 @@
         <lldp>
           <enable>no</enable>
         </lldp>
-        <interface-management-profile>{{ managemnt }}</interface-management-profile>
       </layer3>
