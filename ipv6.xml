@@ -4,9 +4,10 @@
             <router-advertisement>
               <enable>no</enable>
             </router-advertisement>
+            <enable-ndp-monitor>yes</enable-ndp-monitor>
           </neighbor-discovery>
           <address>
-            <entry name="{{ insert_your_IPv6_address }}">
+            <entry name="2001:db8:3c4d:15::/64">
               <advertise>
                 <enable>no</enable>
                 <valid-lifetime>2592000</valid-lifetime>
@@ -15,8 +16,10 @@
                 <auto-config-flag>yes</auto-config-flag>
               </advertise>
               <enable-on-interface>yes</enable-on-interface>
+              <prefix/>
             </entry>
           </address>
+          <enabled>yes</enabled>
         </ipv6>
         <ndp-proxy>
           <enabled>no</enabled>
@@ -24,4 +27,5 @@
         <lldp>
           <enable>no</enable>
         </lldp>
+        <interface-management-profile>{{ managemnt }}</interface-management-profile>
       </layer3>
