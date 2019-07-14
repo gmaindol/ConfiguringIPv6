@@ -51,6 +51,7 @@ snippets:
   # - name: vrouter
   #   xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
   #   file: vrouter.xml
+  # adding something
   - name: IPv6
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface/ethernet/entry[@name='ethernet1/1']
     file: ipv6.xml
