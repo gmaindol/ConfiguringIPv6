@@ -35,10 +35,10 @@ variables:
     description: enter ipv6 address
     default: ipv6_address
     type_hint: ipv6
-  - name: vrouter_name
-    description: enter_vrouter_name
-    default: default
-    type_hint: default
+  # - name: vrouter_name
+  #   description: enter_vrouter_name
+  #   default: default
+  #   type_hint: default
   
   # - name: choices
   #   description: sample dropdown list
@@ -57,9 +57,9 @@ variables:
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 snippets:
-  - name: vrouter
-    xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
-    file: vrouter.xml
+  # - name: vrouter
+  #   xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
+  #   file: vrouter.xml
   - name: IPv6
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
     file: ipv6.xml

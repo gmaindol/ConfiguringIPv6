@@ -1,5 +1,0 @@
-      <entry name="{{ vrouter_name }}">
-        <interface>
-          <member>{{ interface_name }}</member>
-        </interface>
-      </entry>
