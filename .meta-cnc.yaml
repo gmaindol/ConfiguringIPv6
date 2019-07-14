@@ -27,10 +27,6 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
 variables:
-  - name: vrouter_name
-    description: enter_vrouter_name
-    default: default
-    type_hint: default
   - name: interface_name
     description: specifiy the interface
     default: ethernet1/1
@@ -38,7 +34,12 @@ variables:
   - name: insert_your_IPv6_address
     description: enter ipv6 address
     default: ipv6_address
-    type_hint: ipv6  
+    type_hint: ipv6
+  - name: vrouter_name
+    description: enter_vrouter_name
+    default: default
+    type_hint: default
+  
   # - name: choices
   #   description: sample dropdown list
   #   default: choices
