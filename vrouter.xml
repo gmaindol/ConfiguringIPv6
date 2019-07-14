@@ -23,6 +23,3 @@
             <enable>no</enable>
           </ospfv3>
         </protocol>
-        <interface>
-          <member>{{ interface_name }}</member>
-        </interface>
