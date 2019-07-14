@@ -7,7 +7,7 @@
             <enable-ndp-monitor>yes</enable-ndp-monitor>
           </neighbor-discovery>
           <address>
-            <entry name="{{ 2001:db8:3c4d:15::/64 }}">
+            <entry name="{{ insert_your_IPv6_address }}">
               <advertise>
                 <enable>no</enable>
                 <valid-lifetime>2592000</valid-lifetime>
