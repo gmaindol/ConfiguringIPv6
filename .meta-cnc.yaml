@@ -35,7 +35,7 @@ variables:
     description: specifiy the interface
     default: ethernet1/1
     type_hint: ethernet1/1
-    - name: insert_your_IPv6_address
+  - name: insert_your_IPv6_address
     description: enter ipv6 address
     default: ipv6_address
     type_hint: ipv6  
