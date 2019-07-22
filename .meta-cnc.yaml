@@ -33,11 +33,11 @@ variables:
     type_hint: ethernet1/1
   - name: insert_your_IPv6_address
     description: enter ipv6 address
-    default: ipv6_address
+    default: 2001:db8:3c4d:15::/64
     type_hint: ipv6
   - name: vrouter_name
     description: enter_vrouter_name
-    default: VR
+    default: default
     type_hint: default
   - name: zone_name
     description: enter_zone_name
