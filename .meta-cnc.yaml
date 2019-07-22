@@ -1,7 +1,7 @@
 # skillet preamble information used by panhandler
 # ---------------------------------------------------------------------
 # unique snippet name
-name: Interface_IPv6
+name: Configuring IPv6 
 # label used for menu selection
 label: Interface_IPv6
 description: Configuring IPv6 on VMseries Interface
