@@ -39,7 +39,10 @@ variables:
     description: enter_vrouter_name
     default: VR
     type_hint: default
-  
+  - name: zone_name
+    description: enter_zone_name
+    default: Internet
+    type_hint: default  
   # - name: choices
   #   description: sample dropdown list
   #   default: choices
@@ -63,7 +66,9 @@ snippets:
   - name: vrouter
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
     file: vrouter.xml
-
+  - name: zone
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
+    file: zone.xml
 
     
 # ---------------------------------------------------------------------

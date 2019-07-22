@@ -1,0 +1,8 @@
+<entry name="{{ zone_name }}">
+        <network>
+          <layer3>
+            <member>{{ interface_name }}</member>
+          </layer3>
+        </network>
+      </entry>
+    </zone>
