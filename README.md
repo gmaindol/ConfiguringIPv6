@@ -8,7 +8,7 @@ With this skillet following setting are configured on the interface
 4) Security Zone
 5) Enables NDP monitoring
 
-Prerequisite 
+# Prerequisite 
 
 1) Interface name where IPv6 needs to be enabled
 2) IPv6 address
