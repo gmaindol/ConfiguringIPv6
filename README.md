@@ -1,5 +1,5 @@
 # Configuring IPv6 
-IPv6 Interface configuration skillet provides quick an easy way to configure an IPv6 address on PANOS data plane interfaces. With this skillet customer (enterprise or SP) can configure IPv6 on multiple interfaces automatically and assign them to respective VR (virtual router) and Security Zones.
+IPv6 Interface configuration skillet provides quick an easy way to configure an IPv6 address on PANOS data plane interfaces. With this skillet customer (enterprise or SP) can configure IPv6 on multiple interfaces and assign them to respective VR (virtual router) and Security Zones.
 
 With this skillet following setting are configured on the interface
 1) Enables IPv6 on the interface
@@ -14,7 +14,7 @@ With this skillet following setting are configured on the interface
 3) Name of vrouter that needs to be confiured for this interface
 4) Name of Security Zone that needs to be confiured for this interface
 
-You can provides subnet or host IP as an IPv6 address. When using subnet the host part of the address is derived using the Interface ID. RA are not enabled and needs to configured seperately. Also you can provide the exsisting Security Zone and Virtual Router name, else new value provided in the variable will create a corresponding resource.
+You can provides subnet or host IP as an IPv6 address. When using subnet the host part of the address is derived using the Interface ID. RA are not enabled and needs to configured seperately. You can use exsisting Security Zone and Virtual Router ids, else new value provided in the variable will create a corresponding resource.
 
 
 # Support Policy
