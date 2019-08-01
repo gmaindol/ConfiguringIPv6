@@ -28,19 +28,19 @@ labels:
 # type_hints can be text, ip_address, or dropdown
 variables:
   - name: interface_name
-    description: specifiy the interface
+    description: Interface_Name
     default: ethernet1/1
     type_hint: ethernet1/1
   - name: insert_your_IPv6_address
-    description: enter ipv6 address
+    description: IPv6_address
     default: 2001:db8:3c4d:15::/64
     type_hint: ipv6
   - name: vrouter_name
-    description: enter_vrouter_name
+    description: Vrouter_Name
     default: default
     type_hint: default
   - name: zone_name
-    description: enter_zone_name
+    description: Security_Zone_Name
     default: Internet
     type_hint: default  
   # - name: choices
